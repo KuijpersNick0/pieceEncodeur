@@ -1,0 +1,38 @@
+body{
+    width: 500px;
+    font-style: Arial;
+    font-size: 12px;
+    border: 1px lightgray;
+    border-style: solid;
+    padding: 10px;
+}
+
+.bouton {
+    background-color: steelblue;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+}
+
+label{
+    
+    display: inline-block;
+}
+input { 
+    display: inline-block; 
+}
+
+li{
+    background-color: lightgray;
+    padding: 5px;
+    margin: 5px;
+    list-style-type: none;
+}
+
+.final {
+    background-color: lightblue;
+    padding: 5px;
+    margin: 5px;
+}

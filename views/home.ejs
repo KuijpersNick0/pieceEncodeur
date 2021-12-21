@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <title>Appartement</title>
+</head>
+<body>
+    <h1>Liste des pièces de l'appartement</h1>
+    <table>
+        <tbody onload="addtotal()">
+            <% for (var i=0; i<piece.length; i++){ %>
+                <li>Pièce: <%= piece[i].name %> <%= piece[i].length * piece[i].width %> M2 </li>
+           
+            <% } %> 
+             <li class="final"> Surface totale   </li>
+        </tbody>
+    </table>
+    <a class ="bouton" href="/formulaire">Encoder une autre pièce</a>
+</body>
+</html>

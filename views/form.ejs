@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <title>Formulaire</title>
+</head>
+<body>
+    <h1>Encoder les données de la pièce</h1>
+    <form action ="/formulaire/add" method="POST">
+        <p>
+            <label>Pièce : <input type="text" name="piece" /> </label>
+        </p>
+        <p>
+            <label>Largeur : <input type="number" id="largeur" name="largeur" min="1"/> </label>
+        </p>
+       <p>
+           <label>Longueur : <input type="number" id="longueur" name="longueur" min="1"/></label>
+       </p>
+            <button class="bouton">Enregistrer</button>
+    </form>
+    <p>
+        <a class="bouton" onclick="calculSurface()">Calculer la surface </a> <div id="afficheSurface"></div>
+    </p>
+    
+</body>
+
+<script type="text/javascript">
+    function calculSurface(){
+        let largeur = document.getElementById("largeur").value;
+        let longueur = document.getElementById("longueur").value;
+        let affichage = document.getElementById("afficheSurface");
+        let surface = largeur*longueur;
+        affichage.innerHTML = surface + " M2";
+    }   
+</script>
+
+</html>
